@@ -96,7 +96,7 @@ text-to-image의 경우, 우리는 transformer 모델과 diffusion model의 UNet
 
 우리의 지각적 압축 모델은 이전의 연구를 기반으로 하며, 지각 손실과 patch-based 적대적 목적함수의 조합을 이용하여 훈련된 오토인코더로 구성되어 있다. 이러한 구성은 이미지의 지역적인 특성을 강제함으로써 이미지 매니폴드 범위 안에서만 이미지 재구성이 일어나도록 제한하고, $L_2$나 $L_1$과 같은 픽셀 공간에서의 손실에만 의존함으로써 발생하는 이미지의 bluriness를 막아줄 수 있다.
 
-더 상세하게 RGB 공간 상에서 이미지 x가 $$x \in \R^{H\times W\times 3}$$로 표현될 때, 인코더 $\xi$는 x를 잠재 표현(latent representation) $z$로 인코딩한다. 즉 $z=\xi(x)$이며, 디코더 $D$는 $z\in\R^{h\times w\times c}$인 잠재 표현 $z$로부터 이미지를 재구성하여 $x=D(z)=D(E(x))$를 산출한다.
+더 상세하게 RGB 공간 상에서 이미지 x가 $x \in \R^{H\times W\times 3}$로 표현될 때, 인코더 $\xi$는 x를 잠재 표현(latent representation) $z$로 인코딩한다. 즉 $z=\xi(x)$이며, 디코더 $D$는 $z\in\R^{h\times w\times c}$인 잠재 표현 $z$로부터 이미지를 재구성하여 $x=D(z)=D(E(x))$를 산출한다.
 
 인코더는 인자 $f = H/h = W/w$ 를 이용하여 이미지를 다운샘플링하는데, 이 때 우리는 $m \in \N$을 만족하는 다른 다운샘플링 인자 $f = 2^m$ 를 연구하였다.
 
