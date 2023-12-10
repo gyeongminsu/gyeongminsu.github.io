@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
+gem 'jekyll-sitemap'
+
 gem "jekyll-theme-chirpy", "~> 6.3", ">= 6.3.1"
 
 group :test do
