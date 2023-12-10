@@ -135,7 +135,7 @@ E와 D를 포함하여 우리가 훈련시킨 지각적 압축 모델을 이용�
 
 ## 2.3. Conditioning Mechanisms
 
-다른 유형의 생성 모델과 마찬가지로 diffusion model은 $p(z|y)$ 형태의 조건부 분포를 모델링할 수 있다. 이는 conditional denoising 오토인코더 $\epsilon(z_t, t, y)$로 구현될 수 있으며, text, semantic maps, image-to-image translation 등과 같은 인풋 $y$를 통해 합성 과정을 제어하는 방법을 제공할 수 있다.
+다른 유형의 생성 모델과 마찬가지로 diffusion model은 $p(z\|y)$ 형태의 조건부 분포를 모델링할 수 있다. 이는 conditional denoising 오토인코더 $\epsilon(z_t, t, y)$로 구현될 수 있으며, text, semantic maps, image-to-image translation 등과 같은 인풋 $y$를 통해 합성 과정을 제어하는 방법을 제공할 수 있다.
 
 그러나, 이미지 합성 과정에서 클래스-라벨 또는 입력 이미지의 흐릿한 변형을 넘어서 diffusion model의 생성력과 다른 conditional variant를 결합하는 것은 아직 연구되지 않은 미지의 영역이다.
 
@@ -147,7 +147,7 @@ cross-attention 계층에서의 매핑은 $Attention(Q, K, V) = softmax(\dfrac{Q
 
 $$Q = W^{(i)}_Q\cdot\varphi_i(z_t), K = W^{(i)}_K \cdot \tau_{\theta}(y), V = W^{(i)}_V \cdot \tau_{\theta}(y)$$ 이다. 
 
-여기서, $\varphi_i(z_t) \in \R^{N \times d^i_{\epsilon}}$은 $\epsilon_{\theta}$를 구현하는 UNet의 평탄화된 중간 표현을 나타내며 $W^{(i)}_V \in \R^{d\times d^i_{\epsilon}}, W^{(i)}_Q \in  \R^{d \times d_{\tau}} \& W^{(i)}_K \in \R^{d \times d_{\tau}}$는 학습 가능한 projection 행렬들이다.
+여기서, $\varphi_i(z_t) \in \R^{N \times d^i_{\epsilon}}$은 $\epsilon_{\theta}$를 구현하는 UNet의 평탄화된 중간 표현을 나타내며 $$W^{(i)}_V \in \R^{d\times d^i_{\epsilon}}, W^{(i)}_Q \in  \R^{d \times d_{\tau}} \& W^{(i)}_K \in \R^{d \times d_{\tau}}$$는 학습 가능한 projection 행렬들이다.
 
 image-conditioning pair를 기반으로, 우리는 아래의 수식을 통해 conditional LDM을 학습할 수 있다.
 
