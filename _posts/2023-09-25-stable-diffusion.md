@@ -2,7 +2,6 @@
 title : High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion) 논문 리뷰
 categories : [Paper Review]
 tags : [stable diffusion, LDM, Paper Review]
-author: 경민수
 date : 2023-09-25 18:00:00 +0900
 pin : true
 path : true
