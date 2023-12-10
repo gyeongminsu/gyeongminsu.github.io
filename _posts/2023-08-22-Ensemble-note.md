@@ -1,7 +1,7 @@
 ---
 title : 앙상블 정리
-categories : [ML, DL, Ensemble, 정리]
-tags : [L, DL, Ensemble, 정리]
+categories : ML DL Ensemble note
+tags : ML DL Ensemble note
 date : 2023-08-22 18:00:00 +0900
 pin : true
 path : true
