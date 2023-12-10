@@ -6,6 +6,7 @@ author: 경민수
 date : 2023-09-25 18:00:00 +0900
 pin : true
 path : true
+math : true
 image : /assets/img/2023-09-25-stable-diffusion/Untitled%201.png
 ---
 # High-Resolution Image Synthesis with Latent Diffusion Models (Stable diffusion) 논문리뷰
@@ -95,7 +96,7 @@ text-to-image의 경우, 우리는 transformer 모델과 diffusion model의 UNet
 
 우리의 지각적 압축 모델은 이전의 연구를 기반으로 하며, 지각 손실과 patch-based 적대적 목적함수의 조합을 이용하여 훈련된 오토인코더로 구성되어 있다. 이러한 구성은 이미지의 지역적인 특성을 강제함으로써 이미지 매니폴드 범위 안에서만 이미지 재구성이 일어나도록 제한하고, $L_2$나 $L_1$과 같은 픽셀 공간에서의 손실에만 의존함으로써 발생하는 이미지의 bluriness를 막아줄 수 있다.
 
-더 상세하게 RGB 공간 상에서 이미지 x가 $x \in \R^{H\times W\times 3}$로 표현될 때, 인코더 $\xi$는 x를 잠재 표현(latent representation) $z$로 인코딩한다. 즉 $z=\xi(x)$이며, 디코더 $D$는 $z\in\R^{h\times w\times c}$인 잠재 표현 $z$로부터 이미지를 재구성하여 $x=D(z)=D(E(x))$를 산출한다.
+더 상세하게 RGB 공간 상에서 이미지 x가 $$x \in \R^{H\times W\times 3}$$로 표현될 때, 인코더 $\xi$는 x를 잠재 표현(latent representation) $z$로 인코딩한다. 즉 $z=\xi(x)$이며, 디코더 $D$는 $z\in\R^{h\times w\times c}$인 잠재 표현 $z$로부터 이미지를 재구성하여 $x=D(z)=D(E(x))$를 산출한다.
 
 인코더는 인자 $f = H/h = W/w$ 를 이용하여 이미지를 다운샘플링하는데, 이 때 우리는 $m \in \N$을 만족하는 다른 다운샘플링 인자 $f = 2^m$ 를 연구하였다.
 
@@ -129,7 +130,7 @@ E와 D를 포함하여 우리가 훈련시킨 지각적 압축 모델을 이용�
 
 이 이점에는 2D convolutional layer로 기본적인 UNet을 구축하는 능력을 포함하며, 가중치가 조절된 경계를 이용하여 이미지에서 지각적으로 가장 관련된 부분에 포커징하는 것을 포함한다. 이 방법의 효율성과 정확성은 아래의 수학적 표현과 설명을 통해 강조된다.
 
-![Untitled](High-Resolution%20Image%20Synthesis%20with%20Latent%20Diffus%20b5256d3d85364e649ccb4db90df1bebc/Untitled%203.png)
+![Untitled](/assets/img/2023-09-25-stable-diffusion/Untitled%203.png)
 
 이 모델의 신경 구조 $\epsilon_{\theta}(\circ, t)$는 time-conditional UNet을 통하여 구현된다. 전방 프로세스가 고정되어 있기 때문에, $z_t$는 훈련 과정 중에서 $E$를 통하여 효율적으로 획득할 수 있다. 그리고 $p(z)$에서 추출한 샘플들은 $D$를 통한 단일 패스에서 이미지 공간으로 decode될 수 있다.
 
@@ -145,7 +146,7 @@ E와 D를 포함하여 우리가 훈련시킨 지각적 압축 모델을 이용�
 
 cross-attention 계층에서의 매핑은 $Attention(Q, K, V) = softmax(\dfrac{QK^T}{\sqrt d})$를 통해 구현된다. 여기서 $Q$(Query), $K$(Key), $V$(Value)는
 
-$Q = W^{(i)}_Q \cdot \varphi_i(z_t), K = W^{(i)}_K \cdot \tau_{\theta}(y), V = W^{(i)}_V \cdot \tau_{\theta}(y)$ 이다. 
+$$Q = W^{(i)}_Q\cdot\varphi_i(z_t), K = W^{(i)}_K \cdot \tau_{\theta}(y), V = W^{(i)}_V \cdot \tau_{\theta}(y)$$ 이다. 
 
 여기서, $\varphi_i(z_t) \in \R^{N \times d^i_{\epsilon}}$은 $\epsilon_{\theta}$를 구현하는 UNet의 평탄화된 중간 표현을 나타내며 $W^{(i)}_V \in \R^{d\times d^i_{\epsilon}}, W^{(i)}_Q \in  \R^{d \times d_{\tau}} \& W^{(i)}_K \in \R^{d \times d_{\tau}}$는 학습 가능한 projection 행렬들이다.
 
