@@ -20,13 +20,13 @@ Transformer 모델의 등장 이전, RNN은 오랜 시간동안 NLP(Natural Lang
 
 Attention is all you need : Transformer 모델의 등장으로 인해 NLP 분야에서 RNN의 시대 종결.
 
-→ <span style="color:#9A4E3E">Transformer 중심으로 NLP 분야의 연구 진행이 시작됨.</span>
+→ <span style="color:#BA6835">Transformer 중심으로 NLP 분야의 연구 진행이 시작됨.</span>
 
 Transformer의 성공은 Computer Vision 분야에도 많은 영향을 미치게 되었다.
 
 CV 분야에서 CNN 모델이 지배적이였던 과거에는 Transformer 모델의 핵심 기능인 self attention을 CNN에 적용하는 방법을 중점적으로 연구해왔다.
 
-하지만 최근에는 CNN에 self attention을 적용하는 것 보다, <span style="color:#9A4E3E">CNN 모델을 활용하지 않고 Transformer 모델 자체를 활용하여 Task를 진행하는 것</span>에 초점을 둔 연구가 진행되고 있다.
+하지만 최근에는 CNN에 self attention을 적용하는 것 보다, <span style="color:#BA6835">CNN 모델을 활용하지 않고 Transformer 모델 자체를 활용하여 Task를 진행하는 것</span>에 초점을 둔 연구가 진행되고 있다.
 
 # 2. Attention
 
@@ -41,7 +41,7 @@ Transformer 모델의 골자를 간략히 설명하자면, RNN과 CNN과는 다�
 
 ![Untitled](/assets/img/2023-09-28-VIT-review/Untitled.png)
 
-**<span style="color:#9A4E3E">RNN 기반 Seq2seq의 단점 ; Context Vector의 크기가 제한적이기 때문에 입력 문장의 모든 정보를 전하기 어렵다.</span>**
+**<span style="color:#BA6835">RNN 기반 Seq2seq의 단점 ; Context Vector의 크기가 제한적이기 때문에 입력 문장의 모든 정보를 전하기 어렵다.</span>**
 
 ## 2-2. Seq2seq with Attention
 
@@ -61,9 +61,9 @@ Attention 함수는 주어진 쿼리(Query)에 대해서 모든 키(Key)와의 �
 
 CNN은 모델 구조 상 여러 개의 Convolutional Layer를 거치며 2차원의 지역적인 특성(Locality)를 유지하기 때문에, 이미지 전체의 정보를 통합하기 위해서는 모든 Layer를 거치어 학습을 진행하여야 한다.
 
-CNN의 이미지 데이터의 정보를 통합하기 위해 Convolutional Layer를 거치는 과정에서 <span style="color:#9A4E3E">Filter의 수, Filter의 높이와 너비, Stride, Padding 각 하이퍼파라미터 최적화를 진행하기 위해서 많은 시간이 소요된다. </span>
+CNN의 이미지 데이터의 정보를 통합하기 위해 Convolutional Layer를 거치는 과정에서 <span style="color:#BA6835">Filter의 수, Filter의 높이와 너비, Stride, Padding 각 하이퍼파라미터 최적화를 진행하기 위해서 많은 시간이 소요된다. </span>
 
-또한 Convolutional Layer를 통과하는 훈련 진행 과정에서 <span style="color:#9A4E3E">역전파 알고리즘이 역방향 계산을 할 때 정방향에서 계산했던 모든 중간 값을 저장하여 다시 이용하여야 하므로, 많은 RAM 용량을 차지한다는 단점이 있다.</span>
+또한 Convolutional Layer를 통과하는 훈련 진행 과정에서 <span style="color:#BA6835">역전파 알고리즘이 역방향 계산을 할 때 정방향에서 계산했던 모든 중간 값을 저장하여 다시 이용하여야 하므로, 많은 RAM 용량을 차지한다는 단점이 있다.</span>
 
 Transformer의 경우 입력된 이미지 데이터를 1d Vector로 변환한 후 self attention을 통해 Query, Key, Value 값을 얻는다. Query와 Key의 유사도를 측정함으로써 가중치를 얻고 그 가중치를 Value에 곱해줌으로써 최종적인 전체 이미지 정보를 통합할 수 있다.
 
@@ -75,7 +75,7 @@ Transformer의 경우 입력된 이미지 데이터를 1d Vector로 변환한 �
 
 - 학습 시에 만나보지 않았던 상황에 대하여 정확한 예측을 하기 위해 사용되는, 새로운 데이터에 대해 좋은 성능을 내기 위해 모델에 사전적으로 주어지는 가정
 
-<span style="color:#9A4E3E">Inductive Bias가 강하게 작용하면 오히려 모델의 성능에 방해물이 될 수 있다.</span>
+<span style="color:#BA6835">Inductive Bias가 강하게 작용하면 오히려 모델의 성능에 방해물이 될 수 있다.</span>
 
 SVM : Margin 최대화 / CNN : 지역적인 정보 / RNN : 순차적인 정보
 
@@ -104,7 +104,7 @@ CNN과 비교하여 Transformer의 Inductive Bias는 하락, 자유도는 상승
 ![Untitled](/assets/img/2023-09-28-VIT-review/Untitled%202.png)
 
 - ViT는 이미지를 16*16 크기의 패치(Patch)로 분할한 후, 이를 NLP의 단어로 취급하여 각 패치에Linear Projection을 적용하여 생성한 embedding vector를 순서대로 Transformer의 input으로 넣어 이미지를 분류한다.
-- 각각의 패치들을 1d의 vector로 표현할 때, 이미지의 특성 상 RGB 3개의 채널로 표현하기 위해 1d * 16*16*3(=768) 차원으로 만들어진 패치를 Linear Projection하는 과정을 <span style="color:#9A4E3E">‘Input이 768차원에서 Ouput이 768차원인 Fully Connected Layer를 통과한다’</span> 라고 이해할 수 있다.
+- 각각의 패치들을 1d의 vector로 표현할 때, 이미지의 특성 상 RGB 3개의 채널로 표현하기 위해 1d * 16*16*3(=768) 차원으로 만들어진 패치를 Linear Projection하는 과정을 <span style="color:#BA6835">‘Input이 768차원에서 Ouput이 768차원인 Fully Connected Layer를 통과한다’</span> 라고 이해할 수 있다.
 - 상기된 일련의 과정을 통해 Flatten하여 임베딩한 각 패치에 Classification(CLS) 토큰, Position embedding이 추가된다.
 
 Classification Token : Classification을 위해 사용되는 고유한 토큰
@@ -115,13 +115,13 @@ Position embedding : 학습 가능한 Patch의 위치 정보
 
 ![Untitled](/assets/img/2023-09-28-VIT-review/Untitled%203.png)
 
-기존의 Transformer 모델의 Layer를 깊게 쌓게 될 경우, 학습이 어려워진다는 단점이 지적이 되기 시작했다. 이러한 단점을 극복하기 위해서 <span style="color:#9A4E3E">Layer Normalization의 위치가 중요하다는 점</span>이 후속 연구를 통해 대두되었다.
+기존의 Transformer 모델의 Layer를 깊게 쌓게 될 경우, 학습이 어려워진다는 단점이 지적이 되기 시작했다. 이러한 단점을 극복하기 위해서 <span style="color:#BA6835">Layer Normalization의 위치가 중요하다는 점</span>이 후속 연구를 통해 대두되었다.
 
 ![Untitled](/assets/img/2023-09-28-VIT-review/Untitled%204.png)
 
 ViT에서 후속 연구의 결과를 받아들였다.
 
-병렬로 Attention을 진행하는 모듈인 Multi-Head Attention을 통과한 후 Normalization을 진행하는 기존 Transformer와 달리, <span style="color:#9A4E3E">ViT에서는 Normalization을 통과한 후 Multi-Head Attention을 진행하게 된다.</span> 이를 통해 깊은 Layer에서도 학습이 잘 되도록 설계하였다.
+병렬로 Attention을 진행하는 모듈인 Multi-Head Attention을 통과한 후 Normalization을 진행하는 기존 Transformer와 달리, <span style="color:#BA6835">ViT에서는 Normalization을 통과한 후 Multi-Head Attention을 진행하게 된다.</span> 이를 통해 깊은 Layer에서도 학습이 잘 되도록 설계하였다.
 
 ### 4-2-1. Encoder : Multi-Head Attention
 
@@ -137,7 +137,7 @@ Vit에서 진행되는 Multi-Head attention의 과정은 다음과 같다.
 
 **Scaled Dot-Product Attention이란?**
 
-: <span style="color:#9A4E3E">Attention 메커니즘의 마지막 출력층의 스코어 함수 값을 특정 값으로 나누어 줌으로써 어텐션 값을 스케일링하는 메커니즘이다.</span>
+: <span style="color:#BA6835">Attention 메커니즘의 마지막 출력층의 스코어 함수 값을 특정 값으로 나누어 줌으로써 어텐션 값을 스케일링하는 메커니즘이다.</span>
 
 Scaled Dot-Product Attention에서 진행하는 Scaling을 통해, Attention 값이 커지게 되면 발생하는 Gradient Vanishing을 방지할 수 있다.
 
@@ -158,16 +158,16 @@ ViT에서 MLP는 Linear input layer를 거쳐 은닉층에 도달한다.
 ## 4-3. Inductive Bias (again)
 
 - CNN의 경우 input image에서 기인한 locality가 모든 Convolutional layer에 내재되어 있으므로 image-specific inductive bias가 높다.
-- ViT의 Encoder에서의 Multi-Layer Perceptron은 input이 patch의 단위로 들어오기 때문에, input에 대한 locality와 translation equivariance가 존재한다. 하지만 <span style="color:#9A4E3E">MSA는 input image를 1d patch로 변환하여 global한 구조를 갖고 있기 때문에 CNN보다 image-specific inductive bias가 낮음.</span>
+- ViT의 Encoder에서의 Multi-Layer Perceptron은 input이 patch의 단위로 들어오기 때문에, input에 대한 locality와 translation equivariance가 존재한다. 하지만 <span style="color:#BA6835">MSA는 input image를 1d patch로 변환하여 global한 구조를 갖고 있기 때문에 CNN보다 image-specific inductive bias가 낮음.</span>
 - ViT에서는 아래 두 가지 방법을 사용하여 Inductive Bias의 주입을 시도함.
 1. Patch extraction : 이미지를 여러 개의 패치로 분할하여 순서가 존재하는 형태로 넣는 것
-2. Resolution adjustment : <span style="color:#9A4E3E">Fine-tuning을 진행할 때 image의 resolution에 따라서 패치의 크기는 동일하지만, 생성되는 패치의 개수가 달라지게 된다. 패치의 갯수에 따라 조정하게 되는 Positional Embedding을 통해 inductive bias가 주입된다.</span>
+2. Resolution adjustment : <span style="color:#BA6835">Fine-tuning을 진행할 때 image의 resolution에 따라서 패치의 크기는 동일하지만, 생성되는 패치의 개수가 달라지게 된다. 패치의 갯수에 따라 조정하게 되는 Positional Embedding을 통해 inductive bias가 주입된다.</span>
 
 ## 4-4. Hybrid Architecture
 
-- ViT의 input image로 아무 가공을 진행하지 않은 기존의 raw image보다, <span style="color:#9A4E3E">CNN으로 추출한 raw image의 feature map을 활용</span>하여 hybrid architecture로 활용할 수 있다.
-- CNN 모델 특성 상 <span style="color:#9A4E3E">feature map은 이미 raw image의 공간적 정보를 포함</span>하고 있으므로 feature map의 패치 크기를 1 by 1으로 설정해도 무방하다.
-- 1 by 1 패치를 사용할 경우 feature map의 <span style="color:#9A4E3E">공간 차원을 flatten하여 각 벡터에 linear projection을 적용한다.</span>
+- ViT의 input image로 아무 가공을 진행하지 않은 기존의 raw image보다, <span style="color:#BA6835">CNN으로 추출한 raw image의 feature map을 활용</span>하여 hybrid architecture로 활용할 수 있다.
+- CNN 모델 특성 상 <span style="color:#BA6835">feature map은 이미 raw image의 공간적 정보를 포함</span>하고 있으므로 feature map의 패치 크기를 1 by 1으로 설정해도 무방하다.
+- 1 by 1 패치를 사용할 경우 feature map의 <span style="color:#BA6835">공간 차원을 flatten하여 각 벡터에 linear projection을 적용한다.</span>
 
 ## 4-5. Fine-Tuning and Higher Resolution
 
@@ -176,7 +176,7 @@ ViT의 Fine-Tuning 과정
 1. 먼저 Large Scale의 데이터로 ViT를 Pre-training한다. 
 2. Pre-train한 해당 모델을 구체적인 최종 목표인 downstream task에 fine-tuning하여 사용한다.
 
-Pre-trained 모델을 downstream task에 fine-tuning하는 과정에서 <span style="color:#9A4E3E">ViT의 pre-trained prediction head를 제거하고 0 값으로 초기화된 feedforward layer로 대체하여 준다.</span> 
+Pre-trained 모델을 downstream task에 fine-tuning하는 과정에서 <span style="color:#BA6835">ViT의 pre-trained prediction head를 제거하고 0 값으로 초기화된 feedforward layer로 대체하여 준다.</span> 
 
 즉, input image의 패치에서 정보를 추출하는 Transformer Encoder는 그대로 사용하지만 특정 Task의 output을 도출하기 위한 MLP의 Head는 downstream task의 목적에 맞도록 다시 학습을 하기 위해 0으로 초기화하여 사용한다.
 
@@ -184,7 +184,7 @@ Pre-trained 모델을 downstream task에 fine-tuning하는 과정에서 <span st
 
 higher resolution, 즉 고해상도의 이미지를 fine-tuning할 경우 input image의 패치의 크기는 pre-training을 할 때와 동일하므로 sequence의 길이가 더욱 길어진다.
 
-ViT의 self-attention의 특성 상 가변적 길이의 패치들을 처리할 수 있지만, 패치의 개수가 많아지면 pre-trained position embedding의 의미가 사라지므로 <span style="color:#9A4E3E">pre-trained embedding을 원본 이미지의 위치에 따라 2D interpolation하여 사용한다.</span>
+ViT의 self-attention의 특성 상 가변적 길이의 패치들을 처리할 수 있지만, 패치의 개수가 많아지면 pre-trained position embedding의 의미가 사라지므로 <span style="color:#BA6835">pre-trained embedding을 원본 이미지의 위치에 따라 2D interpolation하여 사용한다.</span>
 
 # 5. Experiment
 

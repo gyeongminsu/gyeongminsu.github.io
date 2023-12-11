@@ -15,9 +15,9 @@ image : /assets/img/2023-09-28-BERT-review/thumbnail.png
 
 Language Model(LM)의 pre-training 방법은 기존의 많은 NLP 태스크에서 효율적으로 개선되어 굉장히 좋은 성능을 내고 있다. 
 
-이는 특히 <span style="color:#9A4E3E">전체적인 sentenct(문장) 간의 관계를 예측하는 sentence(문장) 단위 레벨의 태스크(ex. Nature Language Inference)</span>를 목표하여 발전되어 왔다.
+이는 특히 <span style="color:#BA6835">전체적인 sentenct(문장) 간의 관계를 예측하는 sentence(문장) 단위 레벨의 태스크(ex. Nature Language Inference)</span>를 목표하여 발전되어 왔다.
 
-또한 <span style="color:#9A4E3E">Token(토큰) 단위의 태스크(ex. NER, QA)</span>에서도 많은 발전을 이루었다. 이러한 토큰 단위 태스크를 진행하는 모델은 토큰 단위의 fine-grained output을 만들어야 한다.
+또한 <span style="color:#BA6835">Token(토큰) 단위의 태스크(ex. NER, QA)</span>에서도 많은 발전을 이루었다. 이러한 토큰 단위 태스크를 진행하는 모델은 토큰 단위의 fine-grained output을 만들어야 한다.
 
 - fine-grained output : 하나의 output을 내기 위해 작은 단위의 output process로 나눈 후 수행하는 것.
 
@@ -40,19 +40,19 @@ pre-trained된 모든 parameter를 간단히 미세 조정하여 downstream task
 
 pre-training 과정에서 feature based와 fine-tuning 두 과정 모두 같은 object function을 공유한다. 이 과정에서 일반적으로 language representation을 학습하기 위해 단방향적 언어 모델(unidirectional language model)을 사용하게 된다.
 
-<span style="color:#9A4E3E">unidirectional model을 fine-tuning할 때 생기는 아키텍쳐의 제한은 모델의 pre-trained representation의 성능을 떨어뜨린다.</span>
+<span style="color:#BA6835">unidirectional model을 fine-tuning할 때 생기는 아키텍쳐의 제한은 모델의 pre-trained representation의 성능을 떨어뜨린다.</span>
 
 GPT의 경우, 입력된 문장의 토큰이 이전 토큰과의 self-attention score만 계산하게 된다.
 
 이러한 제한은 문장(sentence) 수준의 태스크에서 optimal(최적)하지 않다. 
 
-문장 수준의 태스크에서 optimal한 태스크는 <span style="color:#9A4E3E">양방향에서 attention score를 계산하는 것이다.</span>
+문장 수준의 태스크에서 optimal한 태스크는 <span style="color:#BA6835">양방향에서 attention score를 계산하는 것이다.</span>
 
 fine-tuning approach를 개선시킨 BERT : Bidirectional Encoder Representations from Transformers는 pre-training 단계에서 “masked language model(MLM)” 방법을 사용하여 unidirectional model의 제약을 완화하였다.
 
 ## 1-1. WordPiece Embedding
 
-BERT는 입력된 문장을 tokenize할 때 <span style="color:#9A4E3E">단어보다 더 작은 단위로 쪼개는 subword tokenizer의 종류 중 하나인 WordPiece Tokenizer를 사용한다.</span> 
+BERT는 입력된 문장을 tokenize할 때 <span style="color:#BA6835">단어보다 더 작은 단위로 쪼개는 subword tokenizer의 종류 중 하나인 WordPiece Tokenizer를 사용한다.</span> 
 
 subword tokenizer는 기본적으로 자주 등장하는 단어는 그대로 단어 집합에 추가하지만, 자주 등장하지 않는 단어의 경우에는 더 작은 단위인 subword로 분리하여subword들이 단어 집합에 추가된다는 아이디어를 갖고 있다. 이렇게 단어 집합이 만들어지고 나면, 이 단어 집합을 기반으로 tokenizing을 진행한다.
 
@@ -64,7 +64,7 @@ BERT는 sentence 안에서 단어 token의 위치 정보를 embedding하기 위�
 
 트랜스포머에서는 Positional Encoding이라는 방법을 통해서 token의 위치 정보를 embedding했다. 포지셔널 인코딩은 sin함수와 cos함수를 사용하여 token의 위치에 따라 다른 값을 가지는 행렬을 만들어 이를 단어 벡터들과 더하는 방법이다.
 
- BERT에서는 이와 유사하지만, <span style="color:#9A4E3E">위치 정보를 sin함수와 cos함수로 만드는 것이 아니라 학습을 통해서 얻는 Position Embedding이라는 방법을 사용한다.</span>
+ BERT에서는 이와 유사하지만, <span style="color:#BA6835">위치 정보를 sin함수와 cos함수로 만드는 것이 아니라 학습을 통해서 얻는 Position Embedding이라는 방법을 사용한다.</span>
 
 ![Untitled](/assets/img/2023-09-28-BERT-review/Untitled.png)
 
@@ -93,7 +93,7 @@ BERT는 두 개의 문장 입력이 필요한 태스크를 수행하기도 한�
 
 # 2. Architecture of BERT
 
-BERT의 기본 구조는 <span style="color:#9A4E3E">Bidirectional Transformer의 Encoder를 쌓아올린 구조</span>이다. BERT-Base Version에서는 총 12개, BERT-Large Version에서는 총 24개를 쌓아올렸다. 
+BERT의 기본 구조는 <span style="color:#BA6835">Bidirectional Transformer의 Encoder를 쌓아올린 구조</span>이다. BERT-Base Version에서는 총 12개, BERT-Large Version에서는 총 24개를 쌓아올렸다. 
 
 Transformer-Encoder layer의 수 : L, d_model의 크기 : D, self-attention head의 수 : A 라고 할 때, BERT-Base와 BERT-Large의 파라미터 크기는 다음과 같다.
 
@@ -136,7 +136,7 @@ Masked Language Model(MLM)은 입력 텍스트 단어 토큰의 15%를 랜덤으
 2. 10%의 토큰은 랜덤하게 다른 단어로 변경된다.
 3. 10%의 토큰은 그대로 둔다.
 
-세 가지 규칙을 적용하는 이유는, <span style="color:#9A4E3E">선택된 토큰들을 모두 마스킹할 경우  마스킹된 [MASK] 토큰은 fine-tuning 단계에서 나타나지 않으므로 pre-training 단계와 fine-tuning 단계에서의 불일치가 발생하는 문제가 생기기 때문이다.</span> 따라서 선택된 모든 단어에 마스킹을 적용하지 않는 것이다.
+세 가지 규칙을 적용하는 이유는, <span style="color:#BA6835">선택된 토큰들을 모두 마스킹할 경우  마스킹된 [MASK] 토큰은 fine-tuning 단계에서 나타나지 않으므로 pre-training 단계와 fine-tuning 단계에서의 불일치가 발생하는 문제가 생기기 때문이다.</span> 따라서 선택된 모든 단어에 마스킹을 적용하지 않는 것이다.
 
 이와 같은 방법으로 cross entropy loss function을 이용해 [MASK] 토큰에 대한 예측을 수행한다.
 
@@ -166,7 +166,7 @@ pre-training 과정의 세부 스펙은 아래와 같다.
 
 # 4. Fine-Tuning of BERT
 
-BERT가 높은 성능을 얻을 수 있었던 것은 <span style="color:#9A4E3E">레이블이 없는 방대한 데이터를 이용한 pre-trained model을 downstream task에서 레이블이 있는 데이터를 이용한 추가 training하여 하이퍼파라미터 재조정을 진행하였기 때문이다.</span>
+BERT가 높은 성능을 얻을 수 있었던 것은 <span style="color:#BA6835">레이블이 없는 방대한 데이터를 이용한 pre-trained model을 downstream task에서 레이블이 있는 데이터를 이용한 추가 training하여 하이퍼파라미터 재조정을 진행하였기 때문이다.</span>
 
 이러한 downstream task에서 추가 training을 거쳐 하이퍼파라미터 재조정하는 과정을 Fine-Tuning이라고 한다.
 
