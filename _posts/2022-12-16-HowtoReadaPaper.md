@@ -13,7 +13,7 @@ math : true
 
 221216
 
-original paper : [http://ccr.sigcomm.org/online/files/p83-keshavA.pdf](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf)
+original paper : [https://www.academia.edu/37525767/How_to_Read_a_Paper](https://www.academia.edu/37525767/How_to_Read_a_Paper)
 
 제대로된 연구를 시작하기 전, 꽤 유명한 논문인 '논문을 보다 효율적이면서 제대로 읽기 위한 가이드를 제시하는 논문'을 번역해보았다. (논문을 읽기 위한 논문 ㅋㅋ)
 
