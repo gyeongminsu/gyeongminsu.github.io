@@ -1,5 +1,5 @@
 ---
-title : 최적화(Optimizatino) & 경사하강(Gradient Descent)에 대한 정리
+title : 최적화(Optimization) & 경사하강(Gradient Descent)에 대한 정리
 categories : ML DL Optimization Gradient_Descent
 tags : ML DL Optimization Gradient_Descent
 date : 2023-12-17 18:00:00 +0900
