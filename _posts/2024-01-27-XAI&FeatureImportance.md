@@ -2,10 +2,11 @@
 title : XAI의 역사 & Feature Importance & Global model Interpretation
 categories : ML DL XAI Feature_Importance
 tags : ML DL Ensemble note
-date : 2024-02-10 18:00:00 +0900
+date : 2024-01-27 18:00:00 +0900
 pin : true
 path : true
 math : true
+image : /assets/img/2024-02-10-XAI&FeatureImportance/thumbnail.jpg
 ---
 
 이 게시글은 ['파이썬을 활용한 머신러닝 해석 가능성'](https://www.yes24.com/Product/Goods/119609597), ['XAI 설명 가능한 인공지능, 인공지능을 해부하다'](https://www.yes24.com/Product/Goods/89583774) 두 도서의 내용을 혼합하여 정리하였습니다.
