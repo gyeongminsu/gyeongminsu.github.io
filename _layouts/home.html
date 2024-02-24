@@ -24,14 +24,9 @@ refactor: true
 {% endif %}
 
 <!-- Total post size -->
-{% for category in site.categories %}
-{% assign category_name = category | first %}
-{% assign many = site.categories[category_name] | size %}
-{% assign total = total | plus: many %}
-{% if forloop.last %}
-<h1>Total ({{ total }})</h1>
-{% endif %}
-{% endfor %}
+{% assign post_count = site.posts | size %}
+<h1>Total ({{ post_count }})</h1>
+
 
 <!-- Get default posts -->
 
