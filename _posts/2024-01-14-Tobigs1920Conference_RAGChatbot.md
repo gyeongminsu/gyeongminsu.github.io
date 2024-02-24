@@ -20,7 +20,7 @@ Upload: Proceeding...
 
 # 0. Introduction
 
-23년 7월부터 20기로 활동을 시작한 대학생&대학원생 인공지능 및 빅데이터 대표 연합 동아리 [투빅스](https://tobigs-datamarket.github.io/)]에서 19&20기 컨퍼런스로 NLP 팀에서 프로젝트를 진행하였다.
+23년 7월부터 20기로 활동을 시작한 대학생&대학원생 인공지능 및 빅데이터 대표 연합 동아리 [투빅스](https://tobigs-datamarket.github.io/)에서 19&20기 컨퍼런스로 NLP 팀에서 프로젝트를 진행하였다.
 
 이 게시글은 컨퍼런스 프로젝트에 대한 리뷰 및 설명하려는 목적으로 작성하였고, 발표 자료 사진과 함께 내용을 이어갈 것이다.
 
@@ -105,7 +105,7 @@ RAG와 Fine-tuning을 전부 진행하는 것이 바람직한 것은 모두가 �
 
 ![17.jpg](/assets/img/2024-01-14-Tobigs1920Conference_RAGChatbot/17.jpg)
 
-모델 구현에 있어서 우리가 사용한 외부 데이터는 정규세션 우수 과제로 선정된 코드와 역대 컨퍼런스 발표 pdf 파일이고, [투빅스 데이터마켓]([http://www.datamarket.kr/xe/](http://www.datamarket.kr/xe/))과 [Github organzation]([https://github.com/datamarket-tobigs](https://github.com/datamarket-tobigs))에서 데이터를 수집하여 79개의 과제 코드 파일과 71개의 컨퍼런스 pdf를 구하였다.
+모델 구현에 있어서 우리가 사용한 외부 데이터는 정규세션 우수 과제로 선정된 코드와 역대 컨퍼런스 발표 pdf 파일이고, [투빅스 데이터마켓](http://www.datamarket.kr/xe/)과 [Github organzation](https://github.com/datamarket-tobigs)에서 데이터를 수집하여 79개의 과제 코드 파일과 71개의 컨퍼런스 pdf를 구하였다.
 
 ## 3-2. 데이터 전처리 과정
 
@@ -117,9 +117,9 @@ RAG와 Fine-tuning을 전부 진행하는 것이 바람직한 것은 모두가 �
 
 ![19.jpg](/assets/img/2024-01-14-Tobigs1920Conference_RAGChatbot/19.jpg)
 
-정규세션 우수 과제 코드에 대해서는 직접 지정한 구분 단위에 따라서 스플릿 진행을 위해 OpenAI API에서 제공하는 [RecursiveCharacterTextSplitter]([https://api.python.langchain.com/en/latest/text_splitter/langchain.text_splitter.RecursiveCharacterTextSplitter.html](https://api.python.langchain.com/en/latest/text_splitter/langchain.text_splitter.RecursiveCharacterTextSplitter.html))를 이용하였다.
+정규세션 우수 과제 코드에 대해서는 직접 지정한 구분 단위에 따라서 스플릿 진행을 위해 OpenAI API에서 제공하는 [RecursiveCharacterTextSplitter](https://api.python.langchain.com/en/latest/text_splitter/langchain.text_splitter.RecursiveCharacterTextSplitter.html)를 이용하였다.
 
-이렇게 만들어진 split 토큰을 임베딩하였다. 임베딩 모델로는 HuggingFace에서 Semantic-Search Retrieving 시스템을 구현할 때 높은 성과를 내고 있는 [bge-large]([https://huggingface.co/BAAI/bge-large-en](https://huggingface.co/BAAI/bge-large-en)) 모델을 이용하였다.
+이렇게 만들어진 split 토큰을 임베딩하였다. 임베딩 모델로는 HuggingFace에서 Semantic-Search Retrieving 시스템을 구현할 때 높은 성과를 내고 있는 [bge-large](https://huggingface.co/BAAI/bge-large-en)모델을 이용하였다.
 
 ## 3-4. Vector Store
 
