@@ -28,7 +28,7 @@ Upload: Proceeding...
 
 # 1. 아이디어 설계
 
-투빅이 가이드 챗봇 프로젝트의 모티베이션을 설명하자면, 우선 투빅스의 [데이터마켓](http://www.datamarket.kr/xe/)과 [Github organization](https://github.com/datamarket-tobigs)에 아카이빙되어있는 투빅스 선배들의 양질의 활동 자료들(우수 과제 코드, 컨퍼런스 pdf 등등)이 많이 있는 것을 알 수 있다.
+투빅이 가이드 챗봇 프로젝트의 모티베이션을 설명하자면, 우선 투빅스의 데이터마켓과 [Github organization](https://github.com/datamarket-tobigs)에 아카이빙되어있는 투빅스 선배들의 양질의 활동 자료들(우수 과제 코드, 컨퍼런스 pdf 등등)이 많이 있는 것을 알 수 있다.
 
 그래서 이런 자료들의 접근성을 높이고 신입 투빅이들의 투빅스 활동에 도움을 주기 위해 QA 챗봇 프로젝트를 만들기로 기획하였다.
 
@@ -105,7 +105,7 @@ RAG와 Fine-tuning을 전부 진행하는 것이 바람직한 것은 모두가 �
 
 ![17.jpg](/assets/img/2024-01-14-Tobigs1920Conference_RAGChatbot/17.jpg)
 
-모델 구현에 있어서 우리가 사용한 외부 데이터는 정규세션 우수 과제로 선정된 코드와 역대 컨퍼런스 발표 pdf 파일이고, [투빅스 데이터마켓](http://www.datamarket.kr/xe/)과 [Github organzation](https://github.com/datamarket-tobigs)에서 데이터를 수집하여 79개의 과제 코드 파일과 71개의 컨퍼런스 pdf를 구하였다.
+모델 구현에 있어서 우리가 사용한 외부 데이터는 정규세션 우수 과제로 선정된 코드와 역대 컨퍼런스 발표 pdf 파일이고, 투빅스 데이터마켓과 [Github organzation](https://github.com/datamarket-tobigs)에서 데이터를 수집하여 79개의 과제 코드 파일과 71개의 컨퍼런스 pdf를 구하였다.
 
 ## 3-2. 데이터 전처리 과정
 
