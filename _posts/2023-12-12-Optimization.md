@@ -9,7 +9,6 @@ math : true
 image : /assets/img/2023-12-12-Optimization/thumbnail.png
 toc : true
 layout : post
-comments : true
 ---
 
 # 최적화(Optimization) & 경사하강(Gradient Descent)에 대한 정리
