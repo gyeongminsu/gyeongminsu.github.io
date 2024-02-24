@@ -28,7 +28,7 @@ Upload: Proceeding...
 
 # 1. 아이디어 설계
 
-투빅이 가이드 챗봇 프로젝트의 모티베이션을 설명하자면, 우선 투빅스의 [데이터마켓]([http://www.datamarket.kr/xe/](http://www.datamarket.kr/xe/))과 [Github organization]([https://github.com/datamarket-tobigs](https://github.com/datamarket-tobigs))에 아카이빙되어있는 투빅스 선배들의 양질의 활동 자료들(우수 과제 코드, 컨퍼런스 pdf 등등)이 많이 있는 것을 알 수 있다.
+투빅이 가이드 챗봇 프로젝트의 모티베이션을 설명하자면, 우선 투빅스의 [데이터마켓](http://www.datamarket.kr/xe/)과 [Github organization](https://github.com/datamarket-tobigs)에 아카이빙되어있는 투빅스 선배들의 양질의 활동 자료들(우수 과제 코드, 컨퍼런스 pdf 등등)이 많이 있는 것을 알 수 있다.
 
 그래서 이런 자료들의 접근성을 높이고 신입 투빅이들의 투빅스 활동에 도움을 주기 위해 QA 챗봇 프로젝트를 만들기로 기획하였다.
 
