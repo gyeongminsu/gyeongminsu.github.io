@@ -1,5 +1,5 @@
 ---
-title : Instruction fine-tuning, Reinforcement Learning from Human Feedback(RLHF) 
+title : Instruction fine-tuning, Reinforcement Learning from Human Feedback(RLHF) - 미완
 categories : NLP Instruction_fine-tuning Reinforcement_Learing_from_Human_Feedback
 tags : NLP Instruction_fine-tuning Reinforcement_Learing_from_Human_Feedback
 date : 2023-11-12 18:00:00 +0900
