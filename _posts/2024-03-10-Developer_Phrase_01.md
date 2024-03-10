@@ -1,5 +1,5 @@
 ---
-title : 개발자 글귀 #1
+title : 개발자 글귀_1
 categories : 개발자 개발자_글귀 Developer Developer_phrase
 tags : 개발자 개발자_글귀 Developer Developer_phrase
 date : 2024-03-10 12:00:00 +0900
@@ -11,6 +11,9 @@ toc : true
 layout : post
 comments : true
 ---
+
+이 게시글의 내용은 전부 제 사견으로 이루어진 글입니다.
+
 - 221227
     
     ![221227.jpg](/assets/img/2024-03-10-Developer_Phrase_01/221227.jpg)
