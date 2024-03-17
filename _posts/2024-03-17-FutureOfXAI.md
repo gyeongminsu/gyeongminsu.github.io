@@ -207,7 +207,7 @@ $\hookrightarrow$ <span style="color:#BA6835">계산 비용이 많이 든다.</s
 
 → [Attention is not explanation](https://arxiv.org/abs/1902.10186) vs [Attention is not not explanation](https://arxiv.org/abs/1908.04626)
 
-[](http://dsba.korea.ac.kr/seminar/?mod=document&uid=1831)
+[](https://www.youtube.com/watch?v=8VeWltX9GhI)
 
 $\uparrow$ 고려대 DSBA 연구실 설명
 
