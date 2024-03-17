@@ -225,7 +225,7 @@ $\uparrow$ 고려대 DSBA 연구실 설명
 > $\downarrow$ 더 읽을거리
 > 
 > 
-> [Attention is not not explanation_경민수.pdf](/assets/img/2024-03-17-FutureOfXAI/Attention_is_not_not_explanation_%25EA%25B2%25BD%25EB%25AF%25BC%25EC%2588%2598.pdf)
+> [Attention is not not explanation_경민수.pdf](/assets/img/2024-03-17-FutureOfXAI/Attention_is_not_not_explanation_gyeongminsoo.pdf)
 > 
 
 ### 2-2-2. Replacement of RLHF
