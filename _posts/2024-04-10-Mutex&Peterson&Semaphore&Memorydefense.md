@@ -15,7 +15,7 @@ comments : true
 
 # 1. 기본적인 상황
 
-![과제1-1.png](/assets/img/2024-04-10-Mutex&Peterson&Semaphore&Memorydefense/%25EA%25B3%25BC%25EC%25A0%259C1-1.png)
+![과제1-1.png](/assets/img/2024-04-10-Mutex&Peterson&Semaphore&Memorydefense/Untitled%201.png)
 
 처음에 주어진 Program.cs 코드를 실행하면 Main 함수에서 선언된 Thread t가 ThreadBody()에서 shared_var에 접근하고, Main 함수 스레드가 shared_var에 접근하여 총 두 개의 스레드가 공유 변수(volatile static int)인 shared_var에 접근하는 것을 알 수 있다.
 
@@ -207,7 +207,7 @@ internal class Program
 }
 ```
 
-![Untitled](/assets/img/2024-04-10-Mutex&Peterson&Semaphore&Memorydefense/Untitled%201.png)
+![Untitled](/assets/img/2024-04-10-Mutex&Peterson&Semaphore&Memorydefense/Untitled%202.png)
 
 $\uparrow$ Thread.MemoryBarrier() 명령어를 통한 스레드의 원자적 실행 구현
 
