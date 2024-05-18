@@ -203,7 +203,7 @@ Transformer 아키텍처는 self-attention을 사용하여 정보를 처리한�
 
 Discretization의 방법에는 여러 가지(Zero-order hold, Bilinear transformation, Backward Euler method, etc…)가 있지만 그 중에서 **<U>Zero-order hold</U>**와 **<U>Bilinear transformation </U>**두 가지를 설명하도록 하겠다.
 
-- **Zero-order hold, ZOH (영차 유지) → **<U>mamba</U>**에서 사용**
+- **Zero-order hold, ZOH (영차 유지)** → **<U>mamba</U>**에서 사용
 
 ![Untitled](/assets/img/2024-05-18-Diffusion%20Models%20Without%20Attention&SSM/Untitled%201.png)
 
@@ -332,7 +332,7 @@ Input signal의 Continuous 시간 시스템의 Laplace domain(S-domain)을 Discr
 
 ![Untitled](/assets/img/2024-05-18-Diffusion%20Models%20Without%20Attention&SSM/Untitled%204.png)
 
-이 계산 메커니즘은 <U><span style="color:#BA6835">**RNN**</span>의 방식과 똑같이 표현될 수 있다.</U>
+이 계산 메커니즘은 **<U><span style="color:#BA6835">RNN</span></U>**의 방식과 똑같이 표현될 수 있다.
 
 ### **Convolutive view of an SSM**
 
@@ -427,7 +427,7 @@ Input signal의 Continuous 시간 시스템의 Laplace domain(S-domain)을 Discr
 - **Cooley-Tukey FFT Algorithm**
     - 정의
     
-    Cooley-Tukey FFT는 <U>**분할 정복(Divide-and-Conquer)</U>** 알고리즘을 사용하여 DFT를 효율적으로 계산한다. Cooley-Tukey FFT에서는 이를 위해 input signal을 recursive하게 절반씩 나누고, 각각에 대해 FFT를 계산한 후 이를 더해준다. 
+    Cooley-Tukey FFT는 **<U>분할 정복(Divide-and-Conquer)</U>** 알고리즘을 사용하여 DFT를 효율적으로 계산한다. Cooley-Tukey FFT에서는 이를 위해 input signal을 recursive하게 절반씩 나누고, 각각에 대해 FFT를 계산한 후 이를 더해준다. 
     
     - 수식
     1. Length of $N$인 discrete signal $x[n]$의 DFT는 아래와 같다.
@@ -479,7 +479,7 @@ $$
 - **<U>Recursive view</U>**
     - **장점**
         1. SSM의 State와 Output을 Input sequece의 시간 순서대로 계산 가능하다. → <U>시스템의 동적 거동을 시계열적으로 직접 분석할 수 있다. </U>
-        2. <U>긴 sequence에서도 초기 데이터의 영향을 무시하지 않게 된다.</U> **따라서 시계열적 데이터에 대해 자연스럽게 <span style="color:#BA6835">inductive bias</span>를 주입할 수 있다.
+        2. <U>긴 sequence에서도 초기 데이터의 영향을 무시하지 않게 된다.</U> 따라서 시계열적 데이터에 대해 자연스럽게 <span style="color:#BA6835">inductive bias</span>를 주입할 수 있다.
     - 단점
         1. 순차적으로 데이터를 처리해야 하기 때문에 병렬화(parallelization)가 힘들다. 따라서 <U>학습 속도가 느리다.</U> (Same with RNN)
         2. 너무 긴 sequence를 학습할 때 <U>Vanishing Gradient</U> 또는 <U>Exploding Gradient</U> 문제가 발생할 수 있다. (Same with RNN)
