@@ -567,7 +567,7 @@ $$
                 - $P, Q$ : Low-Rank matrix
                 - $V$ : Identity matrix
             - **<U>Woodbury Identity</U>**를 통한 Low-Rank 보정
-                - $(\Lambda - PQ^*)^{-1} = \Lambda^{-1} + \Lambda^{-1}P(I - Q^*\Lambda{-1}P)^{-1}Q^*\Lambda^{-1}$
+                - $$(\Lambda - PQ^*)^{-1} = \Lambda^{-1} + \Lambda^{-1}P(I - Q^*\Lambda{-1}P)^{-1}Q^*\Lambda^{-1}$$
         - Convolutional 연산에서 Cauchy Kernel 사용 → <span style="color:#BA6835">계산 복잡도를 줄이고 $A$ matrix의 안정성 향상</span>
     
 - **S4D (Structured State Space with Diagonal state matrix) - Albert Gu, et al. (06. 2022)**
