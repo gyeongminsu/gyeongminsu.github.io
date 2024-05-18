@@ -192,7 +192,7 @@ Transformer 아키텍처는 self-attention을 사용하여 정보를 처리한�
         
     
     <aside>
-    💡 기존 제어 이론에서는 $A, B, C, D$를 고정. 하지만 Machine Learning에선 <U>$A, B, C, D$를 학습하는 모델을 만들자!</U>
+    <strong><span style="background-color:#343a40">💡 기존 제어 이론에서는 $A, B, C, D$를 고정. 하지만 Machine Learning에선 <U>$A, B, C, D$를 학습하는 모델을 만들자!</U></span></strong>
     
     </aside>
     
@@ -292,13 +292,13 @@ Input signal의 Continuous 시간 시스템의 Laplace domain(S-domain)을 Discr
 
 이 모델을 완전히 명확하게 하기 위해, 수식을 다음과 같이 정의할 수 있다.
 
-1. **이산화된 시스템 방정식**:
+1. **이산화된 시스템 방정식**: \\
  $x_{n+1} = x_n + \frac{\Delta}{2} (A x_n + B u_n + A x_{n+1} + B u_{n+1})$
 
     
     
-    이를 재정렬하여 다음과 같이 표현할 수 있다.
-    $x_{n+1} - \frac{\Delta}{2} A x_{n+1} = x_n + \frac{\Delta}{2} A x_n + \frac{\Delta}{2} B (u_{n+1} + u_n)$
+    이를 재정렬하여 다음과 같이 표현할 수 있다. \\
+    $x_{n+1} - \frac{\Delta}{2} A x_{n+1} = x_n + \frac{\Delta}{2} A x_n + \frac{\Delta}{2} B (u_{n+1} + u_n)$ \\
     
     그리고 Discretized SSM의 식을 다음과 같이 단순화할 수 있다. 
     $$
@@ -338,7 +338,7 @@ Input signal의 Continuous 시간 시스템의 Laplace domain(S-domain)을 Discr
 
 앞서 설명한 SSM의 recurrence는 합성곱으로 작성할 수 있다. 이를 위해 SSM의 방정식을 반복한다.
 
- $x_k = \bar{A} x_{k-1} + \bar{B} u_k$ 
+ $x_k = \bar{A} x_{k-1} + \bar{B} u_k$ \\
  $y_k = \bar{C} x_k$ 
 
 - 시스템의 첫 번째 줄부터 시작하여 아래와 같이 표현할 수 있다.
@@ -446,7 +446,7 @@ Input signal의 Continuous 시간 시스템의 Laplace domain(S-domain)을 Discr
         
         $X[k + N/2] = X_{\text{even}}[k] - W_N^k X_{\text{odd}}[k]$
         
-        - $W_N = e^{-i \frac{2\pi}{N}}$
+        - 여기서 $W_N = e^{-i \frac{2\pi}{N}}$
 - **Time Complexity of Cookey-Tukey FFT Algorithm**
     
     Cooley-Tukey FFT의 시간 복잡도는 다음과 같은 재귀 관계로 나타낼 수 있다.
@@ -493,7 +493,7 @@ $$
         2. 시계열적인 상태 변화를 직접적으로 볼 수 없기 때문에 시스템의 내부 상태를 추적하기 어렵다.
 
 <aside>
-💡 상황에 맞게 SSM의 계산 방식을 적절히 선택할 필요가 있다.
+<strong><span style="background-color:#343a40">💡 상황에 맞게 SSM의 계산 방식을 적절히 선택할 필요가 있다.</span></strong>
 
 </aside>
 
@@ -594,8 +594,8 @@ $$
             ![Untitled](/assets/img/2024-05-18-Diffusion%20Models%20Without%20Attention&SSM/Untitled%2017.png)
             
         - 각 Timestep에서의 parameter $A, B, C$를 $A_t, B_t, C_t$라고 한다면
-            - $A_t = A + \Delta A(x_t)$
-            $B_t = B + \Delta B(x_t)$
+            - $A_t = A + \Delta A(x_t)$ \\
+            $B_t = B + \Delta B(x_t)$ \\
             $C_t = C + \Delta C(x_t)$
             
             $\Delta A(x_t), \Delta B(x_t), \Delta C(x_t)$ : 입력 $x_t$에 따라 동적으로 변화하는 항
@@ -638,7 +638,7 @@ $$
         
     
     <aside>
-    ❓   Albert Gu는 Mamba 이후에 과연 어떤 모델을 만들고 있을까?
+    <span style="background-color:#343a40"><strong>❓ Albert Gu는 Mamba 이후에 과연 어떤 모델을 만들고 있을까?</strong></span>
     
     </aside>
     
