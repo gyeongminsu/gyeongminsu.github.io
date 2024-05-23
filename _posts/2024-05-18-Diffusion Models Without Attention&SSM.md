@@ -691,19 +691,19 @@ Input sequence $I$를 받아 압축(Down-scale)하고 확장(Up-scale)하여 중
 
 S4D의 matrix definition을 간단히 Recap해보면 아래와 같다.
 
-$A_d = (I - \frac{T}{2} A)^{-1} (I + \frac{T}{2} A)$
-$B_d = (I - \frac{T}{2} A)^{-1} T B$
-$C_d = C$
+$A_d = (I - \frac{T}{2} A)^{-1} (I + \frac{T}{2} A)$ \\
+$B_d = (I - \frac{T}{2} A)^{-1} T B$ \\
+$C_d = C$ \\
 $D_d = D$
 
 - Forward S4D
 
-$x_f[k+1] = A_d x_f[k] + B_d u[k]$ 
+$x_f[k+1] = A_d x_f[k] + B_d u[k]$ \\
 $y_f[k] = C_d x_f[k] + D_d u[k]$ 
 
 - Backward S4D
 
-$x_b[k+1] = A_d x_b[k] + B_d u[k]$
+$x_b[k+1] = A_d x_b[k] + B_d u[k]$ \\
 $y_b[k] = C_d x_b[k] + D_d u[k]$
 
 - Output concat
@@ -844,3 +844,11 @@ DiffuSSM을 통하여 Representation compression을 이용하지 않고 long-ran
 그럼에도 불구하고, 이 DiffuSSM이 고해상도의 이미지에서 Diffusion model을 효과적으로 학습하기 위해 더 나은 model architecture를 제공한다는 것은 여전히 유효하다.
 
 DiffuSSM은 attention mechanism의 병목 현상을 제거함으로써 hi-fi audio, video, 3D modeling과 같은 long-range의 diffusion이 필요한 분야들에서 응용 가능성을 넓혀 주었다.
+
+## Referrence
+[https://tulip-phalange-a1e.notion.site/05f977226a0e44c6b35ed9bfe0076839](https://tulip-phalange-a1e.notion.site/05f977226a0e44c6b35ed9bfe0076839) \\
+[https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state#footnote-anchor-3-141228095](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state#footnote-anchor-3-141228095) \\
+[https://angeloyeo.github.io/2019/06/23/Fourier_Series.html#google_vignette](https://angeloyeo.github.io/2019/06/23/Fourier_Series.html#google_vignette) \\
+[https://angeloyeo.github.io/2020/11/08/linear_algebra_and_Fourier_transform.html#google_vignette](https://angeloyeo.github.io/2020/11/08/linear_algebra_and_Fourier_transform.html#google_vignette) \\
+[https://hazyresearch.stanford.edu/blog/2022-01-14-s4-3](https://hazyresearch.stanford.edu/blog/2022-01-14-s4-3) \\
+[https://huggingface.co/blog/lbourdois/get-on-the-ssm-train](https://huggingface.co/blog/lbourdois/get-on-the-ssm-train) 
