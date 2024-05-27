@@ -314,13 +314,13 @@ Input signal의 Continuous 시간 시스템의 Laplace domain(S-domain)을 Discr
 2. **Discretized parameter**:
     
     
-    $\bar{A} = (I - \frac{\Delta}{2} A)^{-1} (I + \frac{\Delta}{2} A)$
-    $\bar{B} = (I - \frac{\Delta}{2} A)^{-1} \Delta B$
+    $\bar{A} = (I - \frac{\Delta}{2} A)^{-1} (I + \frac{\Delta}{2} A)$ \\
+    $\bar{B} = (I - \frac{\Delta}{2} A)^{-1} \Delta B$ \\
     $\bar{C} = C$
     
 3. **이산화된 모델의 최종 형태**:
     
-    $x_k = \bar{A} x_{k-1} + \bar{B} u_k$
+    $x_k = \bar{A} x_{k-1} + \bar{B} u_k$ \\
     $y_k = \bar{C} x_k$
     
 
