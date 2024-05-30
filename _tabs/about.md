@@ -9,7 +9,9 @@ Hi. I am Minsoo-Gyeong, B.S pursuing Student of Computer Science(5th semester) i
 
 I am currently focusing my attention on the development of Artificial Intelligence models, including natural language processing and multi-modal.
 
-As part of that, I am currently working as an internship in [the Intelligent Big Data Lab of the Urban Big Data Convergence Department](https://intelligent-big-data-lab.notion.site/) since February 2024.
+As part of that, I am currently working at NLP Lab advised by Prof. kyungjae lee in University of Seoul
+
+and i did an undergraduate internship at [the Intelligent Big Data Lab of the Urban Big Data Convergence Department](https://intelligent-big-data-lab.notion.site/). May 2024 ~ February 2024.
 
 Also, since July 2023, I have been working as the 20th Vice Club President of [Tobig’s, the AI & Big data Union Academic Club in Korea](https://tobigs-datamarket.github.io/).
 
@@ -21,4 +23,4 @@ The link to my social site is as follows.
 
 Thank you so much for visiting my page! 😃
 
-Last Updated : 24/03/04
+Last Updated : _30. May. 2024_
