@@ -75,10 +75,10 @@ comments : true
 
 ### Main Attribution
 
-- CLIP-based embedding space를 확장하기 위해 <U>**Multi-modal contrastive loss**</U>를 제안한다.
+- CLIP-based embedding space를 확장하기 위해 <U>Multi-modal contrastive loss</U>를 제안한다.
 - Text와 sound의 조합을 통해 더 다양한 image manipulation이 가능함을 보여준다.
 - Zero-shot audio classification 작업에서 SOTA(State-of-the-Art)의 성능을 보여준다.
-- <U>**Adaptive layer masking**</U>을 통해 소리의 semantic information을 자연스럽게 반영할 수 있다.
+- <U>Adaptive layer masking</U>을 통해 소리의 semantic information을 자연스럽게 반영할 수 있다.
 
 # 2. Related Work
 
