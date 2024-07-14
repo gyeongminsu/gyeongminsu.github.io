@@ -1,5 +1,5 @@
 ---
-title : 투빅스 19&20기 컨퍼런스 - 나만의 AI 펫프로필 만들기 후기
+title : 투빅스 20&21기 컨퍼런스 - 나만의 AI 펫프로필 만들기 후기
 categories : Diffusion LLM Llama3 PivotalTuning TextualInversion
 tags : Diffusion LLM Llama3 PivotalTuning TextualInversion
 date : 2024-07-14 18:00:00 +0900
