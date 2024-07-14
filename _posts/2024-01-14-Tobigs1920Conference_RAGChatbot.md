@@ -16,7 +16,6 @@ comments : true
 
 # 투빅스 19&20기 컨퍼런스 : RAG를 이용한 “투빅이 가이드 챗봇” 후기
 
-Upload: Proceeding...
 
 # 0. Introduction
 
