@@ -6,7 +6,7 @@ date : 2024-05-31 18:00:00 +0900
 pin : true
 path : true
 math : true
-image : /assets/img/2024-05-31-Sound-Guided Semantic Image Manipulation/thumbnail.png
+image : /assets/img/2024-04-17-SentencePiece/thumbnail.png
 toc : true
 layout : post
 comments : true
@@ -31,7 +31,7 @@ comments : true
 #### ALBERT, T5, Llama(2) 등의 Transformer 기반 언어모델에서 사용
 
 
-![alt text](image.png)
+![alt text](/assets/img/2024-04-17-SentencePiece/image.png)
 \* The blue components are SentencePiece components in tokenization process
 
 - Normalizer
@@ -51,7 +51,7 @@ comments : true
 
 ### Subword Regularization method
 - BPE-dropout
-![alt text](image-1.png)
+![alt text](/assets/img/2024-04-17-SentencePiece/image-1.png)
   - corpus에 subword의 biagram을 merge할 때, 특정 비율의 list를 dropout -> 한 단어에 대한 분절 수 증가, 다양한 subword 학습 가능!
   
   - Original BPE보다 희소 단어, 오타, noisy한 단어에 대한 robustness 증가
@@ -74,11 +74,11 @@ comments : true
   -> 데이터 전송 효율성, 데이터 구조 확장성 등에 용이
 
 ##### BLEU score for translation compared to other model
-![alt text](image-2.png)
+![alt text](/assets/img/2024-04-17-SentencePiece/image-2.png)
 ##### Segmentation performance of time spent
-![alt text](image-3.png)
+![alt text](/assets/img/2024-04-17-SentencePiece/image-3.png)
 ##### Comparisons with other Implementations
-![alt text](image-4.png)
+![alt text](/assets/img/2024-04-17-SentencePiece/image-4.png)
 # 3. Limitations of SentencePiece tokenizer
 ### Do not considering context of sentence
 - 의미적 맥락, 문법적 구조를 고려하지 않는 토큰화
