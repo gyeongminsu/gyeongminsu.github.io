@@ -6,7 +6,7 @@ date : 2024-08-04 18:00:00 +0900
 pin : true
 path : true
 math : true
-image : /assets/img/2024-08-04-Pretrain_Transformer/thumbnail.jpg
+image : /assets/img/2024-08-04-Pretrain_Transformer/thumbnail.jpeg
 toc : true
 layout : post
 comments : true
