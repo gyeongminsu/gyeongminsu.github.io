@@ -19,7 +19,6 @@ The link to my social site is as follows.
 
 - Github : [https://github.com/gyeongminsu](https://github.com/gyeongminsu)
 - Linkedin : [https://www.linkedin.com/in/minsoo-gyeong-73b487246/](https://www.linkedin.com/in/minsoo-gyeong-73b487246/)
-- Instagram : [https://www.instagram.com/minsoog_official/](https://www.instagram.com/minsoog_official/)
 
 Thank you so much for visiting my page! 😃
 
