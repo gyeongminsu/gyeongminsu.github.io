@@ -5,7 +5,7 @@ order: 4
 ---
 
 ![github_profile.jpg](/assets/img/github_profile.jpg)
-Hi. I am Minsoo-Gyeong, B.S pursuing Student of Computer Science(5th semester) in University of Seoul.
+Hi. I am Minsoo-Gyeong, B.S pursuing Student of Computer Science(6th semester) in University of Seoul.
 
 I am currently focusing my attention on the development of Artificial Intelligence models, including Natural Language Processing, Generative model and Multi-modal.
 
