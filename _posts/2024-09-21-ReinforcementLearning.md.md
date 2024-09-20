@@ -2,7 +2,7 @@
 title : 강화학습 알고리즘 톺아보기
 categories : Reinforcement_Learning
 tags : Reinforcement_Learning
-date : 2024-08-04 18:00:00 +0900
+date : 2024-09-20 18:00:00 +0900
 pin : true
 path : true
 math : true
@@ -20,7 +20,7 @@ comments : true
 
 ### **가장 큰 분류 기준**
 
-- 환경 모델, 즉 상태 전이 함수(  $p(s’ | s,a)$ )와 보상 함수( $r(s, a, s’)$ )의 사용 여부
+- 환경 모델, 즉 상태 전이 함수(  $p(s’ || s,a)$ )와 보상 함수( $r(s, a, s’)$ )의 사용 여부
 - 환경 모델을 사용하면 모델 기반 기법(Model-Based method), 사용하지 않으면 모델 프리 기법(Model-Free method)이다.
 
 ### **Model-Based method**
@@ -173,7 +173,7 @@ DDPG에서 만약 행동을 확률적 정책으로 샘플링했다면 역전파�
 ## 10.3.1. 범주형 DQN
 
 - Recap : Q함수의 수식은 다음과 같다.
-    - $Q_{\pi}(s, a) = E_{\pi}[G_t | S_t = s, A_t = a]$
+    - $Q_{\pi}(s, a) = E_{\pi}[G_t || S_t = s, A_t = a]$
     - Q 함수의 특징 : 확률적 사건인 수익 G_t를 기댓값이라는 하나의 값으로 표현하는 것.
     
 - DQN과 Q러닝에서는 Q 함수, 즉 기댓값으로 표현되는 값을 학습한다.
