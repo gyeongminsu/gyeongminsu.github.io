@@ -7,7 +7,7 @@ order: 4
 ![github_profile.jpg](/assets/img/github_profile.jpg)
 Hi. I am Minsoo-Gyeong, B.S-M.S Integrated Student of Computer Science(6th semester) in University of Seoul.
 
-I am currently focusing my attention on the development of Artificial Intelligence models, including Natural Language Processing, Generative model and Multi-modal.
+I am currently focusing my attention on the development of Artificial Intelligence models(mainly in Large Language Model).
 
 As part of that, I am currently working at [Natural Language Computing Lab](https://nlc-uos.github.io/) advised by Prof. Kyungjae Lee in University of Seoul From May 2024.
 
