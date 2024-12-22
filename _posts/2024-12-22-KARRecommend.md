@@ -12,8 +12,6 @@ layout : post
 comments : true
 ---
 
-# 추천시스템 프로젝트 회고 : Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models (Dec. 2023)
-
 # 0. Introduction
 
 이번 학기에 전공수업 Term Project로 추천 시스템 알고리즘을 구현하는 프로젝트를 진행하였다. “추천 시스템” 이라는 테마 안에서 프로젝트 주제를 주체적으로 정하고 진행해야 했었기 때문에, 나는 연구 분야인 LLM을 이용한 추천 시스템 프로젝트를 진행하고자 했다.
