@@ -16,10 +16,10 @@ timezone: Asia/Seoul
 
 title: 경민수의 블로그 # the main title
 
-tagline: "Let's think step by step." # it will display as the sub-title
+tagline: "L’homme n’est qu’un roseau, le plus faible de la nature, mais c’est un roseau pensant." # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  "Let's think step by step."
+  "L’homme n’est qu’un roseau, le plus faible de la nature, mais c’est un roseau pensant."
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
