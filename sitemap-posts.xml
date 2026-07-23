@@ -8,7 +8,7 @@ permalink: /sitemap-posts.xml
   {% unless post.sitemap == false %}
   <url>
     <loc>{{ post.url | absolute_url | xml_escape }}</loc>
-    <lastmod>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</lastmod>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
   </url>
   {% endunless %}
 {% endfor %}
