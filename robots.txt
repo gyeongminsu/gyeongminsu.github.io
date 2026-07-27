@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://gyeongminsu.github.io/sitemap.xml
-Sitemap: https://gyeongminsu.github.io/sitemap-posts.xml
