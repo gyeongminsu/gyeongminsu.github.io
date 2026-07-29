@@ -1,7 +1,7 @@
 ---
 title : Multithreading의 Race condition을 해소하기 위한 방법(Peterson's algorithm, MemoryDefense, Semaphore)
-categories : Operating_System, Multithreading, Peterson's_algorithm
-tags : Operating_System, Multithreading, Peterson's_algorithm
+categories : [Operating_System, Multithreading, Peterson's_algorithm]
+tags : [Operating_System, Multithreading, Peterson's_algorithm]
 date : 2024-04-09 12:00:00 +0900
 pin : true
 path : true

@@ -1,7 +1,7 @@
 ---
 title : Sound-Guided Semantic Image Manipulation (CVPR 2022) 논문 리뷰
-categories : GAN, CLIP, StyleGAN, StyleCLIP, CV
-tags : GAN, CLIP, StyleGAN, StyleCLIP, CV
+categories : [GAN, CLIP, StyleGAN, StyleCLIP, CV]
+tags : [GAN, CLIP, StyleGAN, StyleCLIP, CV]
 date : 2024-05-31 18:00:00 +0900
 pin : true
 path : true

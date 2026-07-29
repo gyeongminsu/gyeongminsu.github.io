@@ -1,7 +1,7 @@
 ---
 title : 인식적 부정의에 대한 발제문
-categories : epistemic, injustice, ethics, kant, aristotle, miranda_fricker
-tags : epistemic, injustice, ethics, kant, aristotle, miranda_fricker
+categories : [epistemic, injustice, ethics, kant, aristotle, miranda_fricker]
+tags : [epistemic, injustice, ethics, kant, aristotle, miranda_fricker]
 date : 2025-12-02 18:00:00 +0900
 pin : true
 path : true
