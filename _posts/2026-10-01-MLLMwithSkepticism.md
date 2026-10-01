@@ -1,5 +1,5 @@
 ---
-title : MLLMs for Philosophy — 회의주의로 읽는 멀티모달 모델
+title : MLLMs for Philosophy - Especially in Skepticism
 categories : [MLLM, Skepticism, Epistemology, Moore, ComputerVision]
 tags : [MLLM, Skepticism, Epistemology, Moore, ComputerVision]
 date : 2026-10-01 18:00:00 +0900
