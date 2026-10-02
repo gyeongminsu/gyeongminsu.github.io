@@ -15,6 +15,11 @@ refactor: true
 {% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
 {% assign pinned_num = pinned.size | minus: offset %}
 
+{% comment %} Show at most one page of pinned posts per page {% endcomment %}
+{% if pinned_num > paginator.per_page %}
+  {% assign pinned_num = paginator.per_page %}
+{% endif %}
+
 {% if pinned_num > 0 %}
   {% for i in (offset..pinned.size) limit: pinned_num %}
     {% assign posts = posts | push: pinned[i] %}
