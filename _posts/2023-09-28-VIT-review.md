@@ -3,7 +3,7 @@ title : VIT 논문리뷰
 categories : ML DL Transformer VIT Computer-Vision Paper-Review
 tags : ML DL Transformer VIT Computer-Vision Paper-Review
 date : 2023-09-28 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2023-09-28-VIT-review/thumbnail.png

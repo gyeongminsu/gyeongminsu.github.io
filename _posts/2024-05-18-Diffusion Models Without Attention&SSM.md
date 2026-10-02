@@ -3,7 +3,7 @@ title : Diffusion Models Without Attention & SSM(State Space Model) 완전 정�
 categories : [SSM, S4, HiPPO, Mamba, Diffusion, DDPM]
 tags : [SSM, S4, HiPPO, Mamba, Diffusion, DDPM]
 date : 2024-05-18 00:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2024-05-18-Diffusion Models Without Attention&SSM/thumbnail.png

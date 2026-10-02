@@ -3,7 +3,7 @@ title : XAI의 역사 & Feature Importance & Global model Interpretation
 categories : ML DL XAI Feature_Importance
 tags : ML DL Ensemble note
 date : 2024-01-27 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2024-02-10-XAI&FeatureImportance/thumbnail.jpg

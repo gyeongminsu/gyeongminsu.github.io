@@ -3,7 +3,7 @@ title : MLLMs for Philosophy - Especially in Skepticism
 categories : [MLLM, Skepticism, Epistemology, Moore, ComputerVision]
 tags : [MLLM, Skepticism, Epistemology, Moore, ComputerVision]
 date : 2026-10-01 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2026-10-01-MLLMwithSkepticism/thumbnail.jpg

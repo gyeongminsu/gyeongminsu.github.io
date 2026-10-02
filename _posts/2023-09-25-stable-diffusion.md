@@ -3,7 +3,7 @@ title : High-Resolution Image Synthesis with Latent Diffusion Models (Stable Dif
 categories : ML DL Stable-Diffusion LDM Paper-Review
 tags : ML DL Stable-Diffusion LDM Paper-Review
 date : 2023-09-25 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2023-09-25-stable-diffusion/Untitled%201.png

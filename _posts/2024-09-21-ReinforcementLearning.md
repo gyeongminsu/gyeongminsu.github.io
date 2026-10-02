@@ -3,7 +3,7 @@ title : 강화학습 알고리즘 톺아보기
 categories : Reinforcement_Learning
 tags : Reinforcement_Learning
 date : 2024-09-20 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2024-09-21-ReinforcementLearning/thumbnail.png

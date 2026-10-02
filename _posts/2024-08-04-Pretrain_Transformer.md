@@ -3,7 +3,7 @@ title : Encoder-only Transformer model Fine-tuning을 통해 CoLA 데이터셋 �
 categories : Transformer Encoder BERT Scheduler-Free
 tags : Transformer Encoder BERT Scheduler-Free
 date : 2024-08-04 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2024-08-04-Pretrain_Transformer/thumbnail.jpeg

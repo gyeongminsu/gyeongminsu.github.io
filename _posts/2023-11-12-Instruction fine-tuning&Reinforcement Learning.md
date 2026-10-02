@@ -3,7 +3,7 @@ title : Instruction fine-tuning, Reinforcement Learning from Human Feedback(RLHF
 categories : NLP Instruction_fine-tuning Reinforcement_Learing_from_Human_Feedback
 tags : NLP Instruction_fine-tuning Reinforcement_Learing_from_Human_Feedback
 date : 2023-11-12 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2023-11-12-Instruction fine-tuning&Reinforcement Learning/thumbnail.png

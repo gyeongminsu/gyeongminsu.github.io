@@ -3,7 +3,7 @@ title : Zero-shot learning & Few-shot learning, Chain of thought (COT)
 categories : NLP Zero-shot_learning Few-shot_learning Chain_of_thought
 tags : NLP Zero-shot_learning Few-shot_learning Chain_of_thought
 date : 2023-11-05 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2023-11-05-Zeroshotlearning&Fewshotlearning/thumbnail.png

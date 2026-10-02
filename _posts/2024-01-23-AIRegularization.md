@@ -3,7 +3,7 @@ title : AI의 발전 방향성과 AI 규제에 대한 고찰
 categories : ML DL XAI AI_Regularization
 tags : ML DL XAI AI_Regularization
 date : 2024-01-23 12:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2024-01-23-AIRegularization/thumbnail.png

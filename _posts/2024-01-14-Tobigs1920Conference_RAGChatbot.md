@@ -3,7 +3,7 @@ title : 투빅스 19&20기 컨퍼런스 - RAG를 이용한 “투빅이 가이�
 categories : ML RAG Chatbot Opendomain_QA Conference Project
 tags : ML RAG Chatbot Opendomain_QA Conference Project
 date : 2024-01-14 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2024-01-14-Tobigs1920Conference_RAGChatbot/thumbnail.png

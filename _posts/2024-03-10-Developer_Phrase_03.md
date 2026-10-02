@@ -3,7 +3,7 @@ title : 개발자 글귀_3
 categories : 개발자 개발자_글귀 Developer Developer_phrase
 tags : 개발자 개발자_글귀 Developer Developer_phrase
 date : 2024-03-10 12:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2024-03-10-Developer_Phrase_01/thumbnail.jpg

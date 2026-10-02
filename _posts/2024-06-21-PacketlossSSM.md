@@ -3,7 +3,7 @@ title : Packet Loss Prediction using SSMs
 categories : SSM
 tags : SSM
 date : 2024-06-21 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : 

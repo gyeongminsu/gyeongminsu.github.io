@@ -3,7 +3,7 @@ title : Feature Selection & Feature Engineering 정리
 categories : ML DL XAI Feature_Selection Feature_Engineering
 tags : ML DL XAI Feature_Selection Feature_Engineering
 date : 2024-02-24 12:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2024-02-24-FeatureSelction&FeatureEngineering/thumbnail.png

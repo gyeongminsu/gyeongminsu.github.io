@@ -3,7 +3,7 @@ title : How to read a paper(S. Keshav) 번역
 categories : Paper
 tags : Paper
 date : 2022-12-16 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 ---

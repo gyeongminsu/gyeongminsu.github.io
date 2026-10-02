@@ -3,7 +3,7 @@ title : 투빅스 20&21기 컨퍼런스 - 나만의 AI 펫프로필 만들기 �
 categories : Diffusion LLM Llama3 PivotalTuning TextualInversion
 tags : Diffusion LLM Llama3 PivotalTuning TextualInversion
 date : 2024-07-14 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2024-07-14-Tobigs2021Conference_PetAIProfile/thumbnail.png

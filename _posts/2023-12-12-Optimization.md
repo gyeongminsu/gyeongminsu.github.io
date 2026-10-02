@@ -3,7 +3,7 @@ title : 최적화(Optimization) & 경사하강(Gradient Descent)에 대한 정�
 categories : ML DL Optimization Gradient_Descent
 tags : ML DL Optimization Gradient_Descent
 date : 2023-12-17 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2023-12-12-Optimization/thumbnail.png

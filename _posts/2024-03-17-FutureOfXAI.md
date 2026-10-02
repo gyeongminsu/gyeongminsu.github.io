@@ -3,7 +3,7 @@ title : 머신러닝 해석 가능성의 현 주소와 미래 전망에 대해
 categories : ML DL XAI RLHF DPO SSM Mamba
 tags : ML DL XAI RLHF DPO SSM Mamba
 date : 2024-03-10 12:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2024-03-17-FutureOfXAI/thumbnail.png

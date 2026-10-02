@@ -3,7 +3,7 @@ title : 언어 모델과 그를 둘러싼 질문들
 categories : [LLM, Kuhn, NormalScience, Nietzsche, Linguistics]
 tags : [LLM, Kuhn, NormalScience, Nietzsche, Linguistics]
 date : 2025-11-21 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2025-11-21-LLMwithquestion/thumbnail.jpg

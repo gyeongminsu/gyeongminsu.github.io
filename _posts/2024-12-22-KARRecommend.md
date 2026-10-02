@@ -3,7 +3,7 @@ title : 추천시스템 프로젝트 진행 후기 - Towards Open-World Recommen
 categories : RecommendationSystem
 tags : RecommendationSystem
 date : 2024-12-22 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2024-12-22-KARRecommend/thumbnail.png

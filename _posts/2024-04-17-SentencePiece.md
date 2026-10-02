@@ -3,7 +3,7 @@ title : SentencePiece Tokenizer review
 categories : NLP SentencePiece Tokenizer
 tags : NLP SentencePiece Tokenizer
 date : 2024-05-31 18:00:00 +0900
-pin : true
+pin : false
 path : true
 math : true
 image : /assets/img/2024-04-17-SentencePiece/thumbnail.png
