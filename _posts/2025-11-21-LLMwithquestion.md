@@ -103,3 +103,7 @@ Grokking에서 언어 모델의 Test set에 대한 성능이 갑자기 오르는
 ![image.jpg](/assets/img/2025-11-21-LLMwithquestion/jpg-0027.jpg)
 
 ![image.jpg](/assets/img/2025-11-21-LLMwithquestion/jpg-0028.jpg)
+
+# 5. 후속 발표
+
+이 발표의 후속으로 멀티모달 모델의 인식론을 다룬 발표를 진행했다. 언어 모델에서 한 걸음 더 나아가, 이미지를 보는 모델이 회의주의 논증의 어디에 서 있는지를 물었다. 발표 내용과 슬라이드는 [MLLMs for Philosophy - Especially in Skepticism]({% post_url 2026-10-01-MLLMwithSkepticism %})에 정리해 두었다.
